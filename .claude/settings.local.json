@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(hugo version:*)",
+      "Bash(git --version)",
+      "Read(//c/ProgramData/chocolatey/bin/**)",
+      "Bash(git init:*)",
+      "Bash(git submodule:*)",
+      "WebFetch(domain:austinmesh.org)",
+      "Bash(gh run:*)"
+    ]
+  }
+}

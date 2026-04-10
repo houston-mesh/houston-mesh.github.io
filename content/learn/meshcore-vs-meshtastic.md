@@ -1,6 +1,8 @@
 ---
-title: "MeshCore vs Meshtastic"
-description: "A comparison of the two main LoRa mesh platforms used by HoustonMesh"
+title: "MeshCore vs Meshtastic — Which LoRa Platform Is Right for You?"
+description: "A detailed comparison of MeshCore and Meshtastic — the two main LoRa radio mesh networking platforms. Learn the differences in routing, hardware support, ease of use, and which is best for your needs."
+keywords: ["MeshCore vs Meshtastic", "Meshtastic comparison", "LoRa mesh platform comparison", "MeshCore review", "Meshtastic alternatives"]
+date: 2026-01-15
 ---
 
 Both Meshtastic and MeshCore run on the same LoRa hardware on the same 915 MHz band — but they take very different approaches to how a mesh network routes messages. Here's what you need to know.

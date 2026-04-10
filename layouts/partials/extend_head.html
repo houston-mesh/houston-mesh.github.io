@@ -1,1 +1,139 @@
 <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+
+{{/* WebSite schema with SearchAction for Google Sitelinks Searchbox */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://houston-mesh.github.io/#website",
+      "url": "https://houston-mesh.github.io/",
+      "name": "HoustonMesh",
+      "description": "A free, off-grid LoRa radio text messaging network for Houston built on Meshtastic and MeshCore.",
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://houston-mesh.github.io/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://houston-mesh.github.io/#organization",
+      "name": "HoustonMesh",
+      "url": "https://houston-mesh.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://houston-mesh.github.io/images/logo.svg"
+      },
+      "description": "A volunteer community building a free, off-grid Meshtastic LoRa radio mesh network across Houston, Texas.",
+      "areaServed": {
+        "@type": "City",
+        "name": "Houston",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "community",
+        "email": "info@houstonmesh.net"
+      },
+      "sameAs": [
+        "https://github.com/houston-mesh",
+        "https://discord.gg/3WB4zEDjre"
+      ],
+      "keywords": ["Meshtastic", "MeshCore", "LoRa", "mesh network", "Houston", "off-grid communication", "disaster communications", "ham radio"]
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{/* FAQ Page structured data */}}
+{{ if eq .Title "FAQ" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a ham radio license to use Meshtastic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Meshtastic operates on the 915 MHz ISM band, which is unlicensed in the United States. Anyone can use it without any license or registration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to join HoustonMesh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A basic Meshtastic device costs $20–$50. There are no subscriptions, no fees, and no ongoing costs. The network itself is free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How far can Meshtastic messages travel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Range depends on terrain, elevation, and obstacles. Node to node, expect 1–15 miles depending on placement. With good elevation and clear line-of-sight, some nodes reach 20+ miles. Messages hop between nodes, so the total network reach is much larger than any single link."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Meshtastic work without internet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Meshtastic operates entirely over LoRa radio and does not require internet, cell service, or any centralized server. It works even when the power grid is down, as long as nodes have battery or solar power."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Meshtastic messages encrypted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All Meshtastic messages are encrypted by default using AES-256. Public channel messages are encrypted with a shared channel key. Direct messages use additional encryption."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What phone app do I need for Meshtastic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The official Meshtastic app is free on Android and iOS. Your phone connects to the Meshtastic device via Bluetooth — no internet needed for the mesh itself."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{/* BreadcrumbList for inner pages */}}
+{{ if and (not .IsHome) (not (eq .Kind "section")) }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://houston-mesh.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+  ]
+}
+</script>
+{{ end }}

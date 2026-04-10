@@ -1,6 +1,8 @@
 ---
-title: "Understanding How to Position a Node"
-description: "Where you place your Meshtastic node makes all the difference. Here's how to think about it."
+title: "How to Position a Meshtastic Node for Maximum Range"
+description: "Learn where to place your Meshtastic node for the best range and coverage. Covers elevation, line of sight, antenna orientation, indoor vs outdoor mounting, and Houston-specific tips."
+keywords: ["Meshtastic node placement", "LoRa antenna positioning", "Meshtastic range tips", "how to improve Meshtastic range", "LoRa line of sight"]
+date: 2026-01-15
 ---
 
 The single biggest factor in how well your node performs isn't the hardware — it's **where you put it**. LoRa radio travels in straight lines. Anything between your node and another node reduces range. Getting elevation and clear line-of-sight is everything.

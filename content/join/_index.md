@@ -1,6 +1,8 @@
 ---
-title: "Get on the Mesh"
-description: "How to join HoustonMesh with a Meshtastic device"
+title: "Get on the Mesh | Join HoustonMesh"
+description: "How to join HoustonMesh with a Meshtastic device. Get hardware recommendations, flash Meshtastic firmware, and start messaging off-grid in Houston in under an hour."
+keywords: ["join HoustonMesh", "get started Meshtastic", "Meshtastic hardware Houston", "LoRa radio setup", "Heltec T-Beam RAK Meshtastic"]
+date: 2026-01-01
 ---
 
 Getting on HoustonMesh is easier than you think. You need one thing: a **Meshtastic-compatible device**. No license, no subscription, no account.

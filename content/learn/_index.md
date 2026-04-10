@@ -1,6 +1,8 @@
 ---
-title: "Learn"
-description: "Understanding Meshtastic, MeshCore, and LoRa mesh networking"
+title: "Learn | Meshtastic, MeshCore & LoRa Explained"
+description: "Learn how Meshtastic, MeshCore, and LoRa mesh networking work. Plain-English guides for beginners and technical users covering hardware, software, and how to get started."
+keywords: ["learn Meshtastic", "how does LoRa work", "mesh networking explained", "MeshCore vs Meshtastic", "LoRa 915MHz tutorial"]
+date: 2026-01-01
 ---
 
 New to mesh networking? Start here.

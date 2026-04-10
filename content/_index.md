@@ -1,6 +1,8 @@
 ---
-title: "HoustonMesh"
-description: "A free, off-grid text messaging network for Houston built on Meshtastic and LoRa radio."
+title: "HoustonMesh — Free Meshtastic LoRa Mesh Network in Houston, TX"
+description: "HoustonMesh is a free, community-run off-grid text messaging network for Houston, Texas built on Meshtastic and MeshCore LoRa radio. No internet, no cell service needed."
+keywords: ["HoustonMesh", "Meshtastic Houston", "LoRa mesh network Houston", "off-grid communication Houston", "MeshCore Houston", "disaster communications Houston Texas"]
+date: 2026-01-01
 ---
 
 ## What Is HoustonMesh?

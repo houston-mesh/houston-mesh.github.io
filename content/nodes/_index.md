@@ -1,6 +1,8 @@
 ---
-title: "Network Map"
-description: "HoustonMesh nodes and repeaters across the city"
+title: "Network Map | HoustonMesh Repeater Locations"
+description: "Map of HoustonMesh Meshtastic and MeshCore repeater nodes across Houston, Texas. See coverage by neighborhood and find nodes near you."
+keywords: ["HoustonMesh network map", "Meshtastic repeaters Houston", "LoRa nodes Houston Texas", "mesh coverage Houston"]
+date: 2026-01-01
 ---
 
 Our network is a mix of **personal nodes** (carried by community members) and **fixed repeaters** (solar-powered, mounted on rooftops and towers) that provide always-on coverage.

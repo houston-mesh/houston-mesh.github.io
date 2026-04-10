@@ -1,6 +1,8 @@
 ---
-title: "FAQ"
-description: "Frequently asked questions about HoustonMesh and Meshtastic"
+title: "FAQ — HoustonMesh & Meshtastic Questions Answered"
+description: "Frequently asked questions about HoustonMesh, Meshtastic, and LoRa mesh networking. Covers licensing, hardware costs, range, encryption, and how to get started in Houston."
+keywords: ["Meshtastic FAQ", "HoustonMesh FAQ", "LoRa mesh FAQ", "do I need a license for Meshtastic", "how far does Meshtastic reach"]
+date: 2026-01-15
 ---
 
 ## Getting Started

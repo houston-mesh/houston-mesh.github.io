@@ -1,6 +1,8 @@
 ---
-title: "About HoustonMesh"
-description: "Who we are and why we're building Houston's mesh network"
+title: "About HoustonMesh | Houston Meshtastic Community"
+description: "HoustonMesh is a volunteer community building a free, open Meshtastic and MeshCore LoRa radio mesh network across Houston, Texas. Learn who we are and what we value."
+keywords: ["about HoustonMesh", "Houston Meshtastic community", "LoRa radio Houston volunteers", "open mesh network Texas"]
+date: 2026-01-01
 ---
 
 ## Who We Are
