@@ -1,0 +1,106 @@
+baseURL = "https://houston-mesh.github.io/"
+languageCode = "en-us"
+title = "HoustonMesh"
+theme = "PaperMod"
+paginate = 5
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  env = "production"
+  title = "HoustonMesh"
+  description = "A free, off-grid text messaging network for Houston built on Meshtastic and LoRa radio."
+  keywords = ["HoustonMesh", "Meshtastic", "MeshCore", "LoRa", "Houston", "mesh network", "off-grid", "community radio"]
+  author = "HoustonMesh"
+  images = ["/images/og-image.png"]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "dark"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  [params.homeInfoParams]
+    Title = "Houston's Free Off-Grid Mesh Network"
+    Content = """
+**HoustonMesh** is a community-run, free text messaging network built on **Meshtastic** and **LoRa radio** — no internet required, no cell service needed, no central server, no corporation.
+
+We're a group of Houston volunteers deploying solar-powered LoRa radio repeaters across the city so anyone with a Meshtastic device can send messages, share their location, and stay in contact — even when the grid goes down.
+
+Join the community. Get a device. Be part of the mesh.
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/houstonmesh"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:info@houstonmesh.net"
+
+  [params.label]
+    text = "HoustonMesh"
+    icon = "/images/logo.svg"
+    iconHeight = 35
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+  [params.editPost]
+    disabled = true
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    limit = 10
+    keys = ["title", "permalink", "summary", "content"]
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "nodes"
+    name = "Network Map"
+    url = "/nodes/"
+    weight = 20
+  [[menu.main]]
+    identifier = "join"
+    name = "Join"
+    url = "/join/"
+    weight = 30
+  [[menu.main]]
+    identifier = "learn"
+    name = "Learn"
+    url = "/learn/"
+    weight = 40
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 50
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
