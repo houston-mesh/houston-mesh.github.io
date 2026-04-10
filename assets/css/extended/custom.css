@@ -478,17 +478,20 @@ pre code {
 
 /* ─── Discord Nav Icon ───────────────────────── */
 
-.discord-nav-item {
-  margin-left: 0.5rem;
+.nav {
+  align-items: center;
 }
 
 .discord-link {
   display: flex !important;
   align-items: center;
+  justify-content: center;
+  margin: auto 12px auto 8px;
   color: var(--hm-text-muted) !important;
   transition: color 0.2s, transform 0.2s !important;
   text-decoration: none !important;
-  padding: 0 4px;
+  flex-shrink: 0;
+  line-height: 0;
 }
 
 .discord-link:hover {
