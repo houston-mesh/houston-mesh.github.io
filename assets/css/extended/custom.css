@@ -433,7 +433,7 @@ pre code {
   border-top: 2px solid var(--hm-orange);
   border-radius: 0 0 6px 6px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  min-width: 160px;
+  min-width: 200px;
   list-style: none;
   padding: 0.4rem 0;
   margin: 0;
@@ -444,19 +444,23 @@ pre code {
   display: block;
 }
 
+/* Reset PaperMod's gap between menu siblings inside dropdown */
 .dropdown-menu li {
   padding: 0;
+  margin-inline-start: 0 !important;
+  display: block;
+  white-space: nowrap;
 }
 
 .dropdown-menu a {
   display: block;
-  padding: 0.5rem 1.1rem;
+  padding: 0.55rem 1.2rem;
   color: var(--hm-text) !important;
   font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none !important;
   transition: background-color 0.15s, color 0.15s;
-  white-space: nowrap;
+  line-height: 1.4;
 }
 
 .dropdown-menu a:hover {
@@ -464,8 +468,32 @@ pre code {
   color: var(--hm-orange-bright) !important;
 }
 
+.dropdown-menu a span {
+  display: block;
+}
+
 .dropdown-menu a .active {
   color: var(--hm-orange-bright) !important;
+}
+
+/* ─── Discord Nav Icon ───────────────────────── */
+
+.discord-nav-item {
+  margin-left: 0.5rem;
+}
+
+.discord-link {
+  display: flex !important;
+  align-items: center;
+  color: var(--hm-text-muted) !important;
+  transition: color 0.2s, transform 0.2s !important;
+  text-decoration: none !important;
+  padding: 0 4px;
+}
+
+.discord-link:hover {
+  color: #5865F2 !important;
+  transform: scale(1.1);
 }
 
 /* ─── Responsive ─────────────────────────────── */
