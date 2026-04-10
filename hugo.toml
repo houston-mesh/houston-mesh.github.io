@@ -17,7 +17,7 @@ buildExpired = false
   images = ["/images/og-image.png"]
   DateFormat = "January 2, 2006"
   defaultTheme = "dark"
-  disableThemeToggle = false
+  disableThemeToggle = true
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
@@ -77,30 +77,42 @@ Join the community. Get a device. Be part of the mesh.
 
 [menu]
   [[menu.main]]
+    identifier = "network"
+    name = "Network"
+    weight = 10
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 10
+    parent = "network"
+    weight = 1
   [[menu.main]]
     identifier = "nodes"
     name = "Network Map"
     url = "/nodes/"
+    parent = "network"
+    weight = 2
+  [[menu.main]]
+    identifier = "getstarted"
+    name = "Get Started"
     weight = 20
   [[menu.main]]
     identifier = "join"
-    name = "Join"
+    name = "Join the Mesh"
     url = "/join/"
-    weight = 30
+    parent = "getstarted"
+    weight = 1
   [[menu.main]]
     identifier = "learn"
     name = "Learn"
     url = "/learn/"
-    weight = 40
+    parent = "getstarted"
+    weight = 2
   [[menu.main]]
     identifier = "search"
     name = "Search"
     url = "/search/"
-    weight = 50
+    weight = 30
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

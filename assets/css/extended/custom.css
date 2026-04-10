@@ -221,7 +221,7 @@ h2::after {
 /* ─── Buttons / Tags ─────────────────────────── */
 
 .button,
-button,
+button:not(.dropdown-toggle),
 input[type="submit"] {
   background-color: var(--hm-orange) !important;
   color: var(--hm-white) !important;
@@ -234,7 +234,7 @@ input[type="submit"] {
 }
 
 .button:hover,
-button:hover {
+button:not(.dropdown-toggle):hover {
   background-color: var(--hm-orange-bright) !important;
   box-shadow: 0 0 16px rgba(232, 98, 10, 0.5);
 }
@@ -379,6 +379,93 @@ pre code {
 ::selection {
   background-color: rgba(232, 98, 10, 0.35);
   color: var(--hm-white);
+}
+
+/* ─── Dropdown Nav ───────────────────────────── */
+
+#menu {
+  overflow: visible !important;
+}
+
+#menu .has-dropdown {
+  position: relative;
+}
+
+#menu .dropdown-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--hm-text) !important;
+  font-size: inherit;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: color 0.2s;
+  box-shadow: none !important;
+}
+
+#menu .dropdown-toggle:hover {
+  background: none !important;
+  color: var(--hm-orange-bright) !important;
+  box-shadow: none !important;
+}
+
+.dropdown-arrow {
+  transition: transform 0.2s ease;
+  opacity: 0.6;
+}
+
+.has-dropdown.open .dropdown-arrow {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background-color: var(--hm-navy-card);
+  border: 1px solid var(--hm-navy-border);
+  border-top: 2px solid var(--hm-orange);
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  min-width: 160px;
+  list-style: none;
+  padding: 0.4rem 0;
+  margin: 0;
+  z-index: 100;
+}
+
+.has-dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1.1rem;
+  color: var(--hm-text) !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: background-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--hm-navy-light);
+  color: var(--hm-orange-bright) !important;
+}
+
+.dropdown-menu a .active {
+  color: var(--hm-orange-bright) !important;
 }
 
 /* ─── Responsive ─────────────────────────────── */
